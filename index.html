@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Your Logo</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#signup" class="cta">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to EasyBuy</h2>
+            <p>Your convenient online shopping and logistics partner.</p>
+            <a href="#signup" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Easy Shopping</h3>
+                    <p>Find and purchase items from online marketplaces with ease.</p>
+                </div>
+                <div class="feature">
+                    <h3>Secure Payment</h3>
+                    <p>Reliable and secure payment options for hassle-free transactions.</p>
+                </div>
+                <div class="feature">
+                    <h3>Fast Delivery</h3>
+                    <p>Efficient logistics management for quick and safe delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Browse:</strong> Find items you want to buy online.</li>
+                <li><strong>Click:</strong> Use our extension to add items to your cart.</li>
+                <li><strong>Checkout:</strong> Complete the purchase and leave the logistics to us.</li>
+                <li><strong>Receive:</strong> Sit back and relax as your items are delivered to your door.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"EasyBuy made my online shopping experience so smooth and hassle-free. Highly recommend!"</p>
+                <p>- Customer Name</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EasyBuy. All rights reserved.</p>
+            <!-- Add social media links if needed -->
+        </div>
+    </footer>
+
+    <!-- JavaScript for form submission -->
+    <script>
+        // Example script for form submission handling
+        document.getElementById('contactForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            
+            // Add form submission logic here
+            alert('Form submitted! We will contact you soon.');
+        });
+    </script>
+</body>
+</html>
